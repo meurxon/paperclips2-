@@ -1,5 +1,5 @@
 
-go to meurxon.github.io/paperclips2/ to play
+go to https://meurxon.github.io/paperclips2-/ to play
 
 
 
