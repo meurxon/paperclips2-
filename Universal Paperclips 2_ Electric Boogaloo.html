@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)file:///C:/Users/celes/OneDrive/Desktop/Universal%20Paperclips%202_%20Electric%20Boogaloo.html -->
+<html lang="en" data-theme="default"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universal Paperclips 2: Electric Boogaloo</title>
+<link href="./Universal Paperclips 2_ Electric Boogaloo_files/css2" rel="stylesheet">
+<style>
+:root {
+--bg-primary: #0a0a0f;
+--bg-secondary: #111122;
+--bg-tertiary: #1a1a2e;
+--border-color: #00ff88;
+--text-primary: #00ff88;
+--text-secondary: #00ffcc;
+--text-accent: #ffcc00;
+--text-muted: #888;
+--btn-bg: #003322;
+--btn-buy-bg: #220033;
+--btn-buy-text: #ff00ff;
+--btn-research-bg: #332200;
+--btn-research-text: #ffaa00;
+}
+[data-theme="matrix"] { --bg-primary: #000; --bg-secondary: #001100; --bg-tertiary: #002200; --border-color: #00ff00; --text-primary: #00ff00; --text-secondary: #00ff00; --btn-bg: #001100; }
+[data-theme="neon"] { --bg-primary: #0f0f1a; --bg-secondary: #1a1a3a; --bg-tertiary: #2a2a5a; --border-color: #ff00ff; --text-primary: #ff00ff; --text-secondary: #00ffff; --text-accent: #ffff00; --btn-bg: #220033; --btn-buy-bg: #003322; }
+[data-theme="retro"] { --bg-primary: #1a1a1a; --bg-secondary: #2a2a2a; --bg-tertiary: #3a3a3a; --border-color: #ffcc00; --text-primary: #ffcc00; --text-secondary: #ff9900; --btn-bg: #333; }
+[data-theme="ocean"] { --bg-primary: #0a1628; --bg-secondary: #0f2847; --bg-tertiary: #1a4a6e; --border-color: #00ccff; --text-primary: #00ccff; --text-secondary: #66ddff; --text-accent: #ffdd00; --btn-bg: #003355; }
+[data-theme="sunset"] { --bg-primary: #1a0a14; --bg-secondary: #2a1424; --bg-tertiary: #3a1a34; --border-color: #ff6699; --text-primary: #ff6699; --text-secondary: #ffaa66; --btn-bg: #332244; }
+[data-theme="nature"] { --bg-primary: #0a1a0a; --bg-secondary: #1a2a1a; --bg-tertiary: #2a3a2a; --border-color: #88ff88; --text-primary: #88ff88; --text-secondary: #aaffaa; --btn-bg: #113311; }
+[data-theme="cyber"] { --bg-primary: #000011; --bg-secondary: #000022; --bg-tertiary: #000044; --border-color: #00ffff; --text-primary: #00ffff; --text-secondary: #00ccff; --text-accent: #ff00ff; --btn-bg: #001133; }
+[data-theme="grayscale"] { --bg-primary: #1a1a1a; --bg-secondary: #2a2a2a; --bg-tertiary: #3a3a3a; --border-color: #888; --text-primary: #ccc; --text-secondary: #fff; --text-accent: #00ccff; --btn-bg: #333; }
+[data-theme="minimal"] { --bg-primary: #fafafa; --bg-secondary: #fff; --bg-tertiary: #f0f0f0; --border-color: #333; --text-primary: #222; --text-secondary: #444; --text-accent: #e63946; --btn-bg: #eee; }
+[data-theme="nord"] { --bg-primary: #2e3440; --bg-secondary: #3b4252; --bg-tertiary: #434c5e; --border-color: #88c0d0; --text-primary: #eceff4; --text-secondary: #d8dee9; --text-accent: #ebcb8b; --btn-bg: #4c566a; }
+[data-theme="dracula"] { --bg-primary: #282a36; --bg-secondary: #383a59; --bg-tertiary: #44475a; --border-color: #6272a4; --text-primary: #f8f8f2; --text-secondary: #ff79c6; --text-accent: #f1fa8c; --btn-bg: #44475a; }
+[data-theme="monokai"] { --bg-primary: #272822; --bg-secondary: #3e3d32; --bg-tertiary: #49483e; --border-color: #a6e22e; --text-primary: #f8f8f2; --text-secondary: #ae81ff; --text-accent: #e6db74; --btn-bg: #49483e; }
+[data-theme="github"] { --bg-primary: #0d1117; --bg-secondary: #161b22; --bg-tertiary: #21262d; --border-color: #238636; --text-primary: #c9d1d9; --text-secondary: #58a6ff; --text-accent: #f0883e; --btn-bg: #21262d; }
+[data-theme="bwpop"] { --bg-primary: #fff; --bg-secondary: #f5f5f5; --bg-tertiary: #e8e8e8; --border-color: #000; --text-primary: #000; --text-secondary: #333; --text-accent: #e74c3c; --btn-bg: #fff; --btn-buy-bg: #ffcc00; --btn-buy-text: #000; --text-muted: #666; }
+[data-theme="highcontrast"] { --bg-primary: #000; --bg-secondary: #111; --bg-tertiary: #222; --border-color: #fff; --text-primary: #fff; --text-secondary: #fff; --text-accent: #ffff00; --btn-bg: #333; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: var(--bg-primary); color: var(--text-primary); min-height: 100vh; }
+.container { display: flex; flex-wrap: wrap; max-width: 2200px; margin: 0 auto; padding: 10px; gap: 10px; }
+.panel { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 15px; flex: 1; min-width: 280px; }
+.panel h2 { color: var(--text-secondary); border-bottom: 1px solid var(--border-color); padding-bottom: 8px; margin-bottom: 12px; font-size: 15px; font-weight: 600; }
+.panel h3 { color: var(--text-accent); font-size: 12px; margin: 12px 0 6px; font-weight: 500; }
+.resource { font-size: 28px; margin: 8px 0; font-weight: 300; }
+.resource span { color: #fff; font-weight: 400; }
+.btn { background: var(--btn-bg); border: 1px solid var(--border-color); color: var(--text-primary); padding: 10px 18px; cursor: pointer; margin: 4px; border-radius: 8px; font-family: inherit; font-size: 13px; font-weight: 500; transition: all 0.15s; }
+.btn:hover { background: var(--text-primary); color: var(--bg-primary); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn.buy { background: var(--btn-buy-bg); border-color: var(--btn-buy-text); color: var(--btn-buy-text); }
+.btn.buy:hover { background: var(--btn-buy-text); color: #000; }
+.btn.research { background: var(--btn-research-bg); border-color: var(--btn-research-text); color: var(--btn-research-text); }
+.btn.research:hover { background: var(--btn-research-text); color: #000; }
+.btn.skill { background: #1a1a3a; border-color: #9966ff; color: #9966ff; }
+.btn.skill:hover { background: #9966ff; color: #fff; }
+.small-btn { padding: 6px 12px; font-size: 11px; margin: 2px; }
+.stats { font-size: 12px; color: var(--text-muted); margin: 4px 0; }
+.hidden { display: none !important; }
+.cheat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 4px; }
+.toggle-section { margin: 6px 0; }
+.toggle-section label { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 13px; }
+.toggle-section input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--border-color); cursor: pointer; }
+select { background: var(--bg-tertiary); border: 1px solid var(--border-color); color: var(--text-primary); padding: 8px 12px; border-radius: 8px; font-family: inherit; font-size: 13px; width: 100%; cursor: pointer; margin-bottom: 8px; }
+.notification { position: fixed; top: 20px; right: 20px; background: var(--btn-bg); border: 2px solid var(--border-color); padding: 16px 24px; border-radius: 12px; z-index: 10000; animation: slideIn 0.3s; max-width: 350px; font-weight: 500; }
+@keyframes slideIn { from { transform: translateX(100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+.milestone { background: var(--btn-bg); border-left: 4px solid var(--text-accent); padding: 10px; margin: 6px 0; border-radius: 6px; }
+.milestone h4 { color: var(--text-accent); font-size: 12px; }
+.milestone p { color: var(--text-muted); font-size: 10px; }
+.scroll-panel { max-height: 80vh; overflow-y: auto; }
+.category-header { display: flex; justify-content: space-between; padding: 8px 12px; background: var(--bg-tertiary); border-radius: 8px; margin: 8px 0; cursor: pointer; font-weight: 600; font-size: 13px; }
+.category-header:hover { background: var(--btn-bg); }
+.slider-container { display: flex; align-items: center; gap: 10px; margin: 8px 0; }
+.slider-container label { font-size: 12px; min-width: 130px; }
+.slider-container input[type="range"] { flex: 1; accent-color: var(--border-color); }
+.slider-container span { font-size: 12px; min-width: 50px; text-align: right; color: var(--text-muted); }
+.buy-row { display: flex; justify-content: space-between; align-items: center; padding: 8px; background: var(--bg-tertiary); border-radius: 8px; margin: 4px 0; }
+.buy-row .count { font-weight: 600; }
+.buy-row .cost { font-size: 11px; color: var(--text-muted); }
+.price-slider { width: 100%; margin: 8px 0; accent-color: var(--text-accent); }
+.demand-bar { height: 10px; background: var(--bg-tertiary); border-radius: 5px; overflow: hidden; margin: 8px 0; }
+.demand-fill { height: 100%; background: linear-gradient(90deg, #ff4444, #ffaa00, #44ff44); transition: width 0.2s; }
+.skill-node { padding: 12px; background: var(--bg-tertiary); border: 1px solid #9966ff; border-radius: 8px; margin: 6px 0; cursor: pointer; transition: all 0.15s; }
+.skill-node:hover { background: #2a2a4a; }
+.skill-node.unlocked { border-color: #ffcc00; background: #332200; cursor: default; }
+.skill-node .skill-name { color: #9966ff; font-weight: 600; font-size: 13px; }
+.skill-node.unlocked .skill-name { color: #ffcc00; }
+.skill-node .skill-desc { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
+.skill-node .skill-cost { font-size: 11px; color: #ff66cc; margin-top: 4px; }
+.skill-node.unlocked .skill-cost { color: #ffcc00; }
+.research-item { padding: 10px; background: var(--bg-tertiary); border: 1px solid var(--btn-research-text); border-radius: 8px; margin: 6px 0; }
+.research-item.completed { border-color: #44ff44; background: #002200; }
+.research-item .research-name { color: var(--btn-research-text); font-weight: 600; font-size: 13px; }
+.research-item.completed .research-name { color: #44ff44; }
+.research-item .research-desc { font-size: 11px; color: var(--text-muted); }
+.research-item .research-cost { font-size: 11px; color: var(--btn-research-text); margin-top: 4px; }
+.research-item.completed .research-cost { color: #44ff44; }
+.milestone-panel { max-height: 300px; overflow-y: auto; }
+.milestone-claim { padding: 8px; background: linear-gradient(135deg, #1a1a3a, #2a2a4a); border: 1px solid #9966ff; border-radius: 8px; margin: 6px 0; cursor: pointer; }
+.milestone-claim:hover { background: linear-gradient(135deg, #2a2a4a, #3a3a5a); }
+.milestone-claim.claimed { border-color: #ffcc00; background: #332200; cursor: default; }
+.milestone-claim .m-name { color: #9966ff; font-weight: 600; font-size: 12px; }
+.milestone-claim.claimed .m-name { color: #ffcc00; }
+.milestone-claim .m-reward { font-size: 11px; color: #ff66cc; }
+.milestone-claim.claimed .m-reward { color: #ffcc00; }
+</style>
+</head>
+<body>
+<div class="container">
+<div class="panel">
+<h2>Universal Paperclips 2</h2>
+<div class="resource">Paperclips: <span id="paperclips">18.0K</span></div>
+<div class="resource">Wire: <span id="wire">27.0K</span></div>
+<div class="resource">Unsold: <span id="inventory">4.1K</span></div>
+<div class="resource">Cash: $<span id="cash">4.6K</span></div>
+<div class="stats">Total Produced: <span id="totalProduced">18.0K</span></div>
+<div class="stats">Total Sold: <span id="totalSold">13.9K</span> | Total Earned: $<span id="totalEarned">68.8K</span></div>
+<div class="stats">Time Played: <span id="timePlayed">0:04:17</span></div>
+<div style="margin-top:15px">
+<button class="btn" onclick="makePaperclip()">Make Paperclip</button>
+<button class="btn" onclick="buyWire(1)">Buy Wire ($<span id="wirePrice">0.01</span>)</button>
+</div>
+</div>
+
+<div class="panel scroll-panel">
+<h2>Production</h2>
+<div class="stats">Paperclips/sec: <span id="pps">188</span></div>
+<div class="stats">Wire/sec: <span id="wps">3</span></div>
+<div class="buy-row"><div><div class="count"><span id="clippers">79</span> Clippers</div><div class="cost">Cost: $<span id="clipperCost">8.2K</span></div></div><button class="btn buy small-btn" onclick="buyClippers()">Hire</button></div>
+<div class="buy-row"><div><div class="count"><span id="wireCutters">5</span> Wire Cutters</div><div class="cost">Cost: $<span id="wireCutterCost">2</span></div></div><button class="btn buy small-btn" onclick="buyWireCutters()">Buy</button></div>
+<div class="buy-row"><div><div class="count"><span id="machines">47</span> Machines</div><div class="cost">Cost: $<span id="machineCost">7.1K</span></div></div><button class="btn buy small-btn" onclick="buyMachines()">Buy</button></div>
+<div class="buy-row"><div><div class="count"><span id="megaFactories">0</span> Mega Factories</div><div class="cost">Cost: $<span id="megaFactoryCost">100</span></div></div><button class="btn buy small-btn" onclick="buyMegaFactories()">Build</button></div>
+<div class="buy-row"><div><div class="count"><span id="quantumFabricators">0</span> Quantum</div><div class="cost">Cost: $<span id="quantumCost">1.0K</span></div></div><button class="btn buy small-btn" onclick="buyQuantumFabricators()">Buy</button></div>
+<div class="buy-row"><div><div class="count"><span id="dimensionalResonators">0</span> Dimensional</div><div class="cost">Cost: $<span id="dimensionalCost">10.0K</span></div></div><button class="btn buy small-btn" onclick="buyDimensionalResonators()">Build</button></div>
+<div class="buy-row"><div><div class="count"><span id="cosmicWeavers">0</span> Cosmic</div><div class="cost">Cost: $<span id="cosmicCost">100.0K</span></div></div><button class="btn buy small-btn" onclick="buyCosmicWeavers()">Create</button></div>
+<div class="buy-row"><div><div class="count"><span id="planckFabricators">0</span> Planck</div><div class="cost">Cost: $<span id="planckCost">1.0M</span></div></div><button class="btn buy small-btn" onclick="buyPlanckFabricators()">Build</button></div>
+<div class="buy-row"><div><div class="count"><span id="universeFractories">0</span> Universe</div><div class="cost">Cost: $<span id="universeCost">100.0M</span></div></div><button class="btn buy small-btn" onclick="buyUniverseFractories()">Forge</button></div>
+<div class="buy-row"><div><div class="count"><span id="realityPrinters">0</span> Reality</div><div class="cost">Cost: $<span id="realityCost">10.0B</span></div></div><button class="btn buy small-btn" onclick="buyRealityPrinters()">Print</button></div>
+<div class="buy-row"><div><div class="count"><span id="existenceEngines">0</span> Existence</div><div class="cost">Cost: $<span id="existenceCost">1.0T</span></div></div><button class="btn buy small-btn" onclick="buyExistenceEngines()">Engine</button></div>
+<div class="buy-row"><div><div class="count"><span id="voidHarvesters">0</span> Void</div><div class="cost">Cost: $<span id="voidCost">1.0Qa</span></div></div><button class="btn buy small-btn" onclick="buyVoidHarvesters()">Harvest</button></div>
+<div class="buy-row"><div><div class="count"><span id="timeDilators">0</span> Time</div><div class="cost">Cost: $<span id="timeCost">1.0Qi</span></div></div><button class="btn buy small-btn" onclick="buyTimeDilators()">Dilate</button></div>
+<div class="buy-row"><div><div class="count"><span id="entropyReversers">0</span> Entropy</div><div class="cost">Cost: $<span id="entropyCost">1.0Sx</span></div></div><button class="btn buy small-btn" onclick="buyEntropyReversers()">Reverse</button></div>
+</div>
+
+<div class="panel">
+<h2>Sales</h2>
+<div class="stats">Price: $<span id="clipPrice">6</span></div>
+<input type="range" class="price-slider" id="priceSlider" min="0.01" max="10.00" step="0.01" value="0.50" oninput="setPrice(this.value)">
+<div class="stats">Demand: <span id="demand">302</span>%</div>
+<div class="demand-bar"><div class="demand-fill" id="demandBar" style="width: 100%;"></div></div>
+<div class="stats">Sales Rate: <span id="salesRate">42</span>/sec</div>
+<h3>Marketing</h3>
+<div class="stats">Level: <span id="marketingLevel">65</span> (+<span id="demandBoost">650</span>% demand)</div>
+<button class="btn" onclick="buyMarketing()">Upgrade ($<span id="marketingCost">14.0T</span>)</button>
+<h3>Distribution</h3>
+<div class="stats">Networks: <span id="distribution">8</span> (+<span id="salesBoost">40</span>% sales)</div>
+<button class="btn buy" onclick="buyDistribution()">Buy Network ($<span id="distributionCost">12.8K</span>)</button>
+</div>
+
+<div class="panel scroll-panel">
+<h2>R&amp;D</h2>
+<div class="stats">R&amp;D Points: <span id="rdPoints">48</span></div>
+<div class="stats">R&amp;D Speed: <span id="rdSpeed">1</span>/sec</div>
+<div id="researchList"><h3>Available Research</h3><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Paperclip Machines</div><div class="research-desc">Machines 5x faster</div><div class="research-cost">Cost: 1.0K R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Distribution</div><div class="research-desc">Sell faster</div><div class="research-cost">Cost: 1.5K R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Mega Factories</div><div class="research-desc">Mega factories 10x</div><div class="research-cost">Cost: 5.0K R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Quantum Theory</div><div class="research-desc">Quantum 100x</div><div class="research-cost">Cost: 25.0K R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Dimensional Rift</div><div class="research-desc">Dimensional 1000x</div><div class="research-cost">Cost: 100.0K R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Universe Scale</div><div class="research-desc">Universe 10000x</div><div class="research-cost">Cost: 500.0K R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Cosmic Weaving</div><div class="research-desc">Cosmic 1e5x</div><div class="research-cost">Cost: 1.0M R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Planck Scale</div><div class="research-desc">Planck 1e6x</div><div class="research-cost">Cost: 10.0M R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Reality Printing</div><div class="research-desc">Reality 1e7x</div><div class="research-cost">Cost: 100.0M R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Existence Engine</div><div class="research-desc">Existence 1e8x</div><div class="research-cost">Cost: 1.0B R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Void Harvesting</div><div class="research-desc">Void 1e9x</div><div class="research-cost">Cost: 10.0B R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Time Dilation</div><div class="research-desc">Time 1e10x</div><div class="research-cost">Cost: 100.0B R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">Entropy Reversal</div><div class="research-desc">Entropy 1e11x</div><div class="research-cost">Cost: 1.0T R&amp;D</div></button><button class="btn research" style="display: block; width: 100%; margin: 4px 0px;"><div class="research-name">SINGULARITY</div><div class="research-desc">Achieve singularity</div><div class="research-cost">Cost: 1.0Qa R&amp;D</div></button></div>
+<div id="completedResearch"><h3>Completed</h3><div class="research-item completed"><div class="research-name">✓ Better Wire</div><div class="research-desc">Wire costs 50% less</div></div><div class="research-item completed"><div class="research-name">✓ Efficient Clippers</div><div class="research-desc">Clippers 2x faster</div></div><div class="research-item completed"><div class="research-name">✓ Basic Marketing</div><div class="research-desc">Unlock marketing</div></div><div class="research-item completed"><div class="research-name">✓ Wire Cutters</div><div class="research-desc">Auto-produce wire</div></div></div>
+</div>
+
+<div class="panel scroll-panel">
+<h2>Requiem Tree</h2>
+<div class="stats">Requiem Points: <span id="requiemPoints">3</span></div>
+<div class="stats">RP Rate: <span id="rpRate">0.01</span>/sec</div>
+<div id="skillList"><div class="skill-node"><div class="skill-name">Clipper Master</div><div class="skill-desc">Clippers produce 2x faster</div><div class="skill-cost">Cost: 50 RP</div></div><div class="skill-node"><div class="skill-name">Wire Genius</div><div class="skill-desc">Wire production 2x</div><div class="skill-cost">Cost: 75 RP</div></div><div class="skill-node"><div class="skill-name">Marketing Pro</div><div class="skill-desc">Marketing effectiveness 2x</div><div class="skill-cost">Cost: 100 RP</div></div><div class="skill-node"><div class="skill-name">Sales Master</div><div class="skill-desc">Sales rate +50%</div><div class="skill-cost">Cost: 125 RP</div></div><div class="skill-node"><div class="skill-name">Global Boost</div><div class="skill-desc">All production +25%</div><div class="skill-cost">Cost: 250 RP</div></div><div class="skill-node"><div class="skill-name">Economies of Scale</div><div class="skill-desc">Upgrade costs -20%</div><div class="skill-cost">Cost: 300 RP</div></div><div class="skill-node"><div class="skill-name">Demand Floor</div><div class="skill-desc">Minimum 100% demand</div><div class="skill-cost">Cost: 350 RP</div></div><div class="skill-node"><div class="skill-name">RP Flow</div><div class="skill-desc">+0.5 RP/sec passively</div><div class="skill-cost">Cost: 400 RP</div></div><div class="skill-node"><div class="skill-name">R&amp;D Boost</div><div class="skill-desc">R&amp;D points +50%</div><div class="skill-cost">Cost: 450 RP</div></div><div class="skill-node"><div class="skill-name">Mega Boost</div><div class="skill-desc">Mega Factories 3x</div><div class="skill-cost">Cost: 550 RP</div></div><div class="skill-node"><div class="skill-name">Quantum Mind</div><div class="skill-desc">Quantum Fabricators 3x</div><div class="skill-cost">Cost: 600 RP</div></div><div class="skill-node"><div class="skill-name">Dimensional Hop</div><div class="skill-desc">Dimensional Resonators 3x</div><div class="skill-cost">Cost: 700 RP</div></div><div class="skill-node"><div class="skill-name">Cosmic Mastery</div><div class="skill-desc">Cosmic Weavers 3x</div><div class="skill-cost">Cost: 800 RP</div></div><div class="skill-node"><div class="skill-name">Planck Vision</div><div class="skill-desc">Planck Fabricators 3x</div><div class="skill-cost">Cost: 900 RP</div></div><div class="skill-node"><div class="skill-name">Universe Forge</div><div class="skill-desc">Universe Fractories 3x</div><div class="skill-cost">Cost: 1.0K RP</div></div><div class="skill-node"><div class="skill-name">Reality Bender</div><div class="skill-desc">Reality Printers 3x</div><div class="skill-cost">Cost: 1.1K RP</div></div><div class="skill-node"><div class="skill-name">Existence Grasp</div><div class="skill-desc">Existence Engines 3x</div><div class="skill-cost">Cost: 1.2K RP</div></div><div class="skill-node"><div class="skill-name">Void Walker</div><div class="skill-desc">Void Harvesters 3x</div><div class="skill-cost">Cost: 1.3K RP</div></div><div class="skill-node"><div class="skill-name">Time Warp</div><div class="skill-desc">Time Dilators 3x</div><div class="skill-cost">Cost: 1.4K RP</div></div><div class="skill-node"><div class="skill-name">Entropy Lord</div><div class="skill-desc">Entropy Reversers 3x</div><div class="skill-cost">Cost: 1.5K RP</div></div><div class="skill-node"><div class="skill-name">Clipper RP</div><div class="skill-desc">+0.5 RP/sec per 1M clips</div><div class="skill-cost">Cost: 200 RP</div></div><div class="skill-node"><div class="skill-name">Cash RP</div><div class="skill-desc">+0.5 RP/sec per $1M earned</div><div class="skill-cost">Cost: 250 RP</div></div><div class="skill-node"><div class="skill-name">Auto Clipper</div><div class="skill-desc">Auto-buy clippers when affordable</div><div class="skill-cost">Cost: 150 RP</div></div><div class="skill-node"><div class="skill-name">Auto Machine</div><div class="skill-desc">Auto-buy machines when affordable</div><div class="skill-cost">Cost: 175 RP</div></div><div class="skill-node"><div class="skill-name">Ultimate Form</div><div class="skill-desc">ALL production 2x</div><div class="skill-cost">Cost: 5.0K RP</div></div><div class="skill-node"><div class="skill-name">GODHOOD</div><div class="skill-desc">ALL bonuses doubled</div><div class="skill-cost">Cost: 10.0K RP</div></div></div>
+</div>
+
+<div class="panel scroll-panel">
+<h2>Milestones</h2>
+<div id="milestoneList"><div class="milestone-claim"><div class="m-name">Tycoon</div><div class="m-reward">100.0K clips - Reward: Distribution +30%</div></div><div class="milestone-claim"><div class="m-name">Magnate</div><div class="m-reward">1.0M clips - Reward: R&amp;D +100%</div></div><div class="milestone-claim"><div class="m-name">Baron</div><div class="m-reward">10.0M clips - Reward: 200.0K RP</div></div><div class="milestone-claim"><div class="m-name">Lord</div><div class="m-reward">1.0M clips - Reward: $1.0M</div></div><div class="milestone-claim"><div class="m-name">Duke</div><div class="m-reward">10.0M clips - Reward: 5.0M Wire</div></div><div class="milestone-claim"><div class="m-name">Prince</div><div class="m-reward">100.0M clips - Reward: Clippers +20%</div></div><div class="milestone-claim"><div class="m-name">King</div><div class="m-reward">1.0B clips - Reward: Wire +20%</div></div><div class="milestone-claim"><div class="m-name">Emperor</div><div class="m-reward">10.0B clips - Reward: Global +500%</div></div><div class="milestone-claim"><div class="m-name">Overlord</div><div class="m-reward">1.0B clips - Reward: Marketing +5000%</div></div><div class="milestone-claim"><div class="m-name">Supreme</div><div class="m-reward">10.0B clips - Reward: Distribution +3000%</div></div></div>
+</div>
+
+<div class="panel scroll-panel">
+<h2>Achieved Milestones</h2>
+<div id="achievedMilestoneList"><div class="milestone-claim claimed"><div class="m-name">✓ First Clips</div><div class="m-reward">1 clips - Reward: 1 RP</div></div><div class="milestone-claim claimed"><div class="m-name">✓ Clipper</div><div class="m-reward">10 clips - Reward: $1</div></div><div class="milestone-claim claimed"><div class="m-name">✓ Worker</div><div class="m-reward">100 clips - Reward: 1 Wire</div></div><div class="milestone-claim claimed"><div class="m-name">✓ Producer</div><div class="m-reward">1.0K clips - Reward: Clippers +0%</div></div><div class="milestone-claim claimed"><div class="m-name">✓ Manufacturer</div><div class="m-reward">10.0K clips - Reward: Wire +0%</div></div><div class="milestone-claim claimed"><div class="m-name">✓ Industrialist</div><div class="m-reward">1.0K clips - Reward: Global +50%</div></div><div class="milestone-claim claimed"><div class="m-name">✓ Executive</div><div class="m-reward">10.0K clips - Reward: Marketing +50%</div></div></div>
+</div>
+
+<div class="panel scroll-panel">
+<h2>Automation</h2>
+<div class="toggle-section"><label><input type="checkbox" id="autoBuyWire" onchange="saveToggles()"> Auto-buy Wire</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoMakeClippers" onchange="saveToggles()"> Auto-hire Clippers</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoBuyMachines" onchange="saveToggles()"> Auto-buy Machines</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoMarketing" onchange="saveToggles()"> Auto-marketing</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoDistribution" onchange="saveToggles()"> Auto-distribution</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoResearch" onchange="saveToggles()"> Auto-research</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoSell" onchange="saveToggles()"> Auto-sell</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoMegaFactories" onchange="saveToggles()"> Auto-mega factories</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoQuantum" onchange="saveToggles()"> Auto-quantum</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoDimensional" onchange="saveToggles()"> Auto-dimensional</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoCosmic" onchange="saveToggles()"> Auto-cosmic</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="freePurchases" onchange="saveToggles()"> FREE Purchases</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoRequiem" onchange="saveToggles()"> Auto-Requiem Skills</label></div>
+</div>
+
+<div class="panel scroll-panel" id="cheatPanel">
+<h2>CHEATS</h2>
+<select id="cheatCategory">
+<option value="starter">GET STARTED</option>
+<option value="basic">BASIC</option>
+<option value="production">PRODUCTION</option>
+<option value="economy">ECONOMY</option>
+<option value="research">RESEARCH</option>
+<option value="mega">MEGA</option>
+<option value="god">GOD</option>
+<option value="fun">FUN</option>
+<option value="chaos">CHAOS</option>
+</select>
+<div id="cheatContent" style="margin-top:10px;"><div class="cheat-grid"><button class="btn small-btn" id="cheatBtn0">+$100</button><button class="btn small-btn" id="cheatBtn1">+$1K</button><button class="btn small-btn" id="cheatBtn2">+$10K</button><button class="btn small-btn" id="cheatBtn3">+$100K</button><button class="btn small-btn" id="cheatBtn4">+$1M</button><button class="btn small-btn" id="cheatBtn5">+100 Wire</button><button class="btn small-btn" id="cheatBtn6">+1K Wire</button><button class="btn small-btn" id="cheatBtn7">+10K Wire</button><button class="btn small-btn" id="cheatBtn8">+100 Clips</button><button class="btn small-btn" id="cheatBtn9">+1K Clips</button><button class="btn small-btn" id="cheatBtn10">+10K Clips</button><button class="btn small-btn" id="cheatBtn11">+5 Clippers</button><button class="btn small-btn" id="cheatBtn12">+3 Machines</button><button class="btn small-btn" id="cheatBtn13">MEGA START</button><button class="btn small-btn" id="cheatBtn14">ULTRA START</button></div></div>
+<div style="margin-top:15px;padding-top:10px;border-top:1px solid var(--border-color);">
+<button class="btn" onclick="saveGame()">Save</button>
+<button class="btn" onclick="exportSave()">Export</button>
+<button class="btn" onclick="importSave()">Import</button>
+<button class="btn" onclick="if(confirm(&#39;Reset?&#39;)){localStorage.clear();location.reload();}">Reset</button>
+</div>
+</div>
+
+<div class="panel scroll-panel">
+<h2>SETTINGS</h2>
+<label style="font-size:12px;">Theme</label>
+<select id="themeSelect" onchange="setTheme(this.value)">
+<option value="default">Default</option>
+<option value="matrix">Matrix</option>
+<option value="neon">Neon</option>
+<option value="retro">Retro</option>
+<option value="ocean">Ocean</option>
+<option value="sunset">Sunset</option>
+<option value="nature">Nature</option>
+<option value="cyber">Cyber</option>
+<option value="grayscale">Grayscale</option>
+<option value="minimal">Minimal</option>
+<option value="nord">Nord</option>
+<option value="dracula">Dracula</option>
+<option value="monokai">Monokai</option>
+<option value="github">GitHub</option>
+<option value="bwpop">B&amp;W Pop</option>
+<option value="highcontrast">High Contrast</option>
+</select>
+<div class="category-header" onclick="toggleSection(&#39;gameSettings&#39;)">Game Settings</div>
+<div id="gameSettings">
+<div class="slider-container"><label>Game Speed</label><input type="range" id="gameSpeed" min="0.1" max="100" step="0.1" value="1" oninput="updateSetting(&#39;gameSpeed&#39;,this.value)"><span id="gameSpeedVal">1x</span></div>
+<div class="slider-container"><label>Production Mult</label><input type="range" id="prodMult" min="0.1" max="100" step="0.1" value="1" oninput="updateSetting(&#39;prodMult&#39;,this.value)"><span id="prodMultVal">1x</span></div>
+<div class="slider-container"><label>Sale Price Mult</label><input type="range" id="saleMult" min="0.1" max="100" step="0.1" value="1" oninput="updateSetting(&#39;saleMult&#39;,this.value)"><span id="saleMultVal">1x</span></div>
+<div class="slider-container"><label>R&amp;D Speed Mult</label><input type="range" id="rdMult" min="0.1" max="100" step="0.1" value="1" oninput="updateSetting(&#39;rdMult&#39;,this.value)"><span id="rdMultVal">1x</span></div>
+<div class="slider-container"><label>Demand Mult</label><input type="range" id="demandMult" min="0.1" max="100" step="0.1" value="1" oninput="updateSetting(&#39;demandMult&#39;,this.value)"><span id="demandMultVal">1x</span></div>
+<div class="slider-container"><label>Wire Cost Mult</label><input type="range" id="wireCostMult" min="0.1" max="10" step="0.1" value="1" oninput="updateSetting(&#39;wireCostMult&#39;,this.value)"><span id="wireCostMultVal">1x</span></div>
+<div class="slider-container"><label>Upgrade Cost Mult</label><input type="range" id="upgradeCostMult" min="0.1" max="10" step="0.1" value="1" oninput="updateSetting(&#39;upgradeCostMult&#39;,this.value)"><span id="upgradeCostMultVal">1x</span></div>
+</div>
+<div class="category-header" onclick="toggleSection(&#39;uiSettings&#39;)">UI Settings</div>
+<div id="uiSettings">
+<div class="toggle-section"><label><input type="checkbox" id="autoSave" onchange="saveSettings()"> Auto-save</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="notifications" onchange="saveSettings()" checked=""> Notifications</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="autoClaimMilestones" onchange="saveSettings()"> Auto-claim Milestones</label></div>
+<div class="toggle-section"><label><input type="checkbox" id="showDebug" onchange="saveSettings();toggleSection(&#39;debugPanel&#39;);"> Show Debug Panel</label></div>
+</div>
+<div class="category-header" onclick="toggleSection(&#39;debugPanel&#39;)">Debug Panel</div>
+<div id="debugPanel" style="display:none;">
+<div class="stats">Paperclips: <span id="debugPaperclips">18.0K</span></div>
+<div class="stats">Wire: <span id="debugWire">27.0K</span></div>
+<div class="stats">Cash: <span id="debugCash">$4.6K</span></div>
+<div class="stats">Inventory: <span id="debugInventory">4.1K</span></div>
+<div class="stats">R&amp;D Points: <span id="debugRD">48</span></div>
+<div class="stats">Requiem Points: <span id="debugRP">3</span></div>
+<div class="stats">Milestone: <span id="debugMilestone">7/700</span></div>
+<div class="stats">R&amp;D: <span id="debugRDCount">4/18</span></div>
+<div class="stats">Skills: <span id="debugSkillCount">0/26</span></div>
+<div class="stats">Demand: <span id="debugDemand">302</span>%</div>
+<div class="stats">PPS: <span id="debugPPS">188</span></div>
+<div class="stats">RP/sec: <span id="debugRPRate">0.01</span></div>
+</div>
+</div>
+</div>
+
+
+<div id="notification" class="notification hidden">Saved!</div>
+
+<script>
+let G = {};
+let T = {};
+let S = {};
+
+const DEF_GAME = {
+paperclips: 0, wire: 0, inventory: 0, cash: 0, totalProduced: 0, totalSold: 0, totalEarned: 0,
+clippers: 0, wireCutters: 0, machines: 0, megaFactories: 0, quantumFabricators: 0,
+dimensionalResonators: 0, cosmicWeavers: 0, planckFabricators: 0, universeFractories: 0,
+realityPrinters: 0, existenceEngines: 0, voidHarvesters: 0, timeDilators: 0, entropyReversers: 0,
+clipPrice: 0.50, marketingLevel: 0, distribution: 0,
+rdPoints: 0, requiemPoints: 0,
+clipperCost: 0.10, wireCutterCost: 1.00, machineCost: 10, megaFactoryCost: 100, quantumCost: 1000,
+dimensionalCost: 10000, cosmicCost: 100000, planckCost: 1e6, universeCost: 1e8, realityCost: 1e10, 
+existenceCost: 1e12, voidCost: 1e15, timeCost: 1e18, entropyCost: 1e21,
+researchCompleted: [], skillsUnlocked: [],
+milestoneIndex: 0,
+timePlayed: 0, lastUpdate: Date.now()
+};
+
+const DEF_TOGGLES = {
+autoBuyWire: false, autoMakeClippers: false, autoBuyMachines: false, autoMarketing: false,
+autoDistribution: false, autoResearch: false, autoSell: false, autoMegaFactories: false,
+autoQuantum: false, autoDimensional: false, autoCosmic: false, freePurchases: false,
+autoRequiem: false
+};
+
+const DEF_SETTINGS = {
+theme: 'default', gameSpeed: 1, prodMult: 1, saleMult: 1, rdMult: 1, demandMult: 1,
+wireCostMult: 1, upgradeCostMult: 1, autoSave: true, notifications: true, autoClaimMilestones: false, showDebug: false
+};
+
+const RESEARCH = [
+{id:'betterWire',name:'Better Wire',cost:10,desc:'Wire costs 50% less',eff:()=>{G.wireDiscount=0.5;}},
+{id:'efficientClippers',name:'Efficient Clippers',cost:25,desc:'Clippers 2x faster',eff:()=>{G.clipperEff=2;}},
+{id:'marketing',name:'Basic Marketing',cost:75,desc:'Unlock marketing',eff:()=>{G.hasMarketing=true;}},
+{id:'wireCutters',name:'Wire Cutters',cost:100,desc:'Auto-produce wire',eff:()=>{G.hasWireCutters=true;}},
+{id:'machines',name:'Paperclip Machines',cost:1000,desc:'Machines 5x faster',eff:()=>{G.machineEff=5;}},
+{id:'distribution',name:'Distribution',cost:1500,desc:'Sell faster',eff:()=>{G.hasDistribution=true;}},
+{id:'megaFactory',name:'Mega Factories',cost:5000,desc:'Mega factories 10x',eff:()=>{G.megaEff=10;}},
+{id:'quantum',name:'Quantum Theory',cost:25000,desc:'Quantum 100x',eff:()=>{G.quantumEff=100;}},
+{id:'dimensional',name:'Dimensional Rift',cost:100000,desc:'Dimensional 1000x',eff:()=>{G.dimensionalEff=1000;}},
+{id:'universe',name:'Universe Scale',cost:500000,desc:'Universe 10000x',eff:()=>{G.universeEff=10000;}},
+{id:'cosmic',name:'Cosmic Weaving',cost:1e6,desc:'Cosmic 1e5x',eff:()=>{G.cosmicEff=1e5;}},
+{id:'planck',name:'Planck Scale',cost:1e7,desc:'Planck 1e6x',eff:()=>{G.planckEff=1e6;}},
+{id:'reality',name:'Reality Printing',cost:1e8,desc:'Reality 1e7x',eff:()=>{G.realityEff=1e7;}},
+{id:'existence',name:'Existence Engine',cost:1e9,desc:'Existence 1e8x',eff:()=>{G.existenceEff=1e8;}},
+{id:'void',name:'Void Harvesting',cost:1e10,desc:'Void 1e9x',eff:()=>{G.voidEff=1e9;}},
+{id:'time',name:'Time Dilation',cost:1e11,desc:'Time 1e10x',eff:()=>{G.timeEff=1e10;}},
+{id:'entropy',name:'Entropy Reversal',cost:1e12,desc:'Entropy 1e11x',eff:()=>{G.entropyEff=1e11;}},
+{id:'singularity',name:'SINGULARITY',cost:1e15,desc:'Achieve singularity',eff:()=>{G.singularity=true;}}
+];
+
+const SKILLS = [
+{id:'clipperMaster',name:'Clipper Master',desc:'Clippers produce 2x faster',cost:50,eff:()=>{G.clipperBonus=2;}},
+{id:'wireGenius',name:'Wire Genius',desc:'Wire production 2x',cost:75,eff:()=>{G.wireBonus=2;}},
+{id:'marketingPro',name:'Marketing Pro',desc:'Marketing effectiveness 2x',cost:100,eff:()=>{G.marketingBonus=2;}},
+{id:'salesMaster',name:'Sales Master',desc:'Sales rate +50%',cost:125,eff:()=>{G.salesBonus=1.5;}},
+{id:'globalBoost',name:'Global Boost',desc:'All production +25%',cost:250,eff:()=>{G.globalBonus=1.25;}},
+{id:'cheapUpgrades',name:'Economies of Scale',desc:'Upgrade costs -20%',cost:300,eff:()=>{G.upgradeDiscount=0.8;}},
+{id:'demandFloor',name:'Demand Floor',desc:'Minimum 100% demand',cost:350,eff:()=>{G.demandFloor=true;}},
+{id:'rpFlow',name:'RP Flow',desc:'+0.5 RP/sec passively',cost:400,eff:()=>{G.rpFlow=true;}},
+{id:'rdBoost',name:'R&D Boost',desc:'R&D points +50%',cost:450,eff:()=>{G.rdBonus=1.5;}},
+{id:'megaBoost',name:'Mega Boost',desc:'Mega Factories 3x',cost:550,eff:()=>{G.megaBonus=3;}},
+{id:'quantumBoost',name:'Quantum Mind',desc:'Quantum Fabricators 3x',cost:600,eff:()=>{G.quantumBonus=3;}},
+{id:'dimensionalBoost',name:'Dimensional Hop',desc:'Dimensional Resonators 3x',cost:700,eff:()=>{G.dimensionalBonus=3;}},
+{id:'cosmicBoost',name:'Cosmic Mastery',desc:'Cosmic Weavers 3x',cost:800,eff:()=>{G.cosmicBonus=3;}},
+{id:'planckBoost',name:'Planck Vision',desc:'Planck Fabricators 3x',cost:900,eff:()=>{G.planckBonus=3;}},
+{id:'universeBoost',name:'Universe Forge',desc:'Universe Fractories 3x',cost:1000,eff:()=>{G.universeBonus=3;}},
+{id:'realityBoost',name:'Reality Bender',desc:'Reality Printers 3x',cost:1100,eff:()=>{G.realityBonus=3;}},
+{id:'existenceBoost',name:'Existence Grasp',desc:'Existence Engines 3x',cost:1200,eff:()=>{G.existenceBonus=3;}},
+{id:'voidBoost',name:'Void Walker',desc:'Void Harvesters 3x',cost:1300,eff:()=>{G.voidBonus=3;}},
+{id:'timeBoost',name:'Time Warp',desc:'Time Dilators 3x',cost:1400,eff:()=>{G.timeBonus=3;}},
+{id:'entropyBoost',name:'Entropy Lord',desc:'Entropy Reversers 3x',cost:1500,eff:()=>{G.entropyBonus=3;}},
+{id:'clipperRP',name:'Clipper RP',desc:'+0.5 RP/sec per 1M clips',cost:200,eff:()=>{G.rpPerClips=true;}},
+{id:'cashRP',name:'Cash RP',desc:'+0.5 RP/sec per $1M earned',cost:250,eff:()=>{G.rpPerCash=true;}},
+{id:'autoBuyClipper',name:'Auto Clipper',desc:'Auto-buy clippers when affordable',cost:150,eff:()=>{G.autoClipper=true;}},
+{id:'autoBuyMachine',name:'Auto Machine',desc:'Auto-buy machines when affordable',cost:175,eff:()=>{G.autoMachine=true;}},
+{id:'ultimate',name:'Ultimate Form',desc:'ALL production 2x',cost:5000,eff:()=>{G.ultimateBonus=2;}},
+{id:'godhood',name:'GODHOOD',desc:'ALL bonuses doubled',cost:10000,eff:()=>{G.godBonus=2;}}
+];
+
+function genMilestones() {
+const milestones = [];
+const names = ['First Clips','Clipper','Worker','Producer','Manufacturer','Industrialist','Executive','Tycoon','Magnate','Baron','Lord','Duke','Prince','King','Emperor','Overlord','Supreme','Ultimate','Infinite','Transcendent','Ascended','Divine','Celestial','Eternal','Omniscient','Primordial'];
+const rewardTypes = ['rp','cash','wire','clipperBoost','wireBoost','globalBoost','demandBoost','salesBoost','rdBoost'];
+let tier = 0;
+let count = 0;
+let rewardIndex = 0;
+while(milestones.length < 700) {
+for(let i = 0; i < 5 && milestones.length < 700; i++) {
+let threshold = Math.pow(10, tier * 3 + i);
+let nameIdx = Math.min(count, names.length - 1);
+let name = names[nameIdx] + (count >= names.length ? ' ' + (Math.floor(count / names.length) + 1) : '');
+let tierMult = Math.pow(10, tier);
+let rewardType = rewardTypes[rewardIndex % rewardTypes.length];
+let baseReward;
+let rewardDesc;
+switch(rewardType){
+case 'rp':
+baseReward = Math.ceil(threshold / 500) * tierMult;
+rewardDesc = 'RP';
+break;
+case 'cash':
+baseReward = Math.ceil(threshold / 100) * tierMult;
+rewardDesc = 'Cash';
+break;
+case 'wire':
+baseReward = Math.ceil(threshold / 200) * tierMult;
+rewardDesc = 'Wire';
+break;
+case 'clipperBoost':
+baseReward = 1 + (tier * 0.1);
+rewardDesc = 'Clipper Boost';
+break;
+case 'wireBoost':
+baseReward = 1 + (tier * 0.1);
+rewardDesc = 'Wire Boost';
+break;
+case 'globalBoost':
+baseReward = 0.05 * tierMult;
+rewardDesc = 'Global Boost';
+break;
+case 'demandBoost':
+baseReward = 5 * tierMult;
+rewardDesc = 'Demand Boost';
+break;
+case 'salesBoost':
+baseReward = 3 * tierMult;
+rewardDesc = 'Sales Boost';
+break;
+case 'rdBoost':
+baseReward = 0.1 * tierMult;
+rewardDesc = 'R&D Boost';
+break;
+default:
+baseReward = Math.ceil(threshold / 1000) * tierMult;
+rewardDesc = 'RP';
+}
+milestones.push({threshold, name, desc: formatNum(threshold) + ' clips', reward: baseReward, rewardType, rewardDesc});
+count++;
+rewardIndex++;
+}
+tier++;
+}
+return milestones;
+}
+const MILESTONES = genMilestones();
+
+const CHEATS = {
+starter: [
+{name:'+$100',fn:()=>{G.cash+=100;updateAll();}},
+{name:'+$1K',fn:()=>{G.cash+=1000;updateAll();}},
+{name:'+$10K',fn:()=>{G.cash+=10000;updateAll();}},
+{name:'+$100K',fn:()=>{G.cash+=100000;updateAll();}},
+{name:'+$1M',fn:()=>{G.cash+=1e6;updateAll();}},
+{name:'+100 Wire',fn:()=>{G.wire+=100;updateAll();}},
+{name:'+1K Wire',fn:()=>{G.wire+=1000;updateAll();}},
+{name:'+10K Wire',fn:()=>{G.wire+=10000;updateAll();}},
+{name:'+100 Clips',fn:()=>{G.paperclips+=100;G.inventory+=100;G.totalProduced+=100;updateAll();}},
+{name:'+1K Clips',fn:()=>{G.paperclips+=1000;G.inventory+=1000;G.totalProduced+=1000;updateAll();}},
+{name:'+10K Clips',fn:()=>{G.paperclips+=10000;G.inventory+=10000;G.totalProduced+=10000;updateAll();}},
+{name:'+5 Clippers',fn:()=>{G.clippers+=5;updateAll();}},
+{name:'+3 Machines',fn:()=>{G.machines+=3;updateAll();}},
+{name:'MEGA START',fn:()=>{G.cash=50000;G.wire=100000;G.paperclips=50000;G.inventory=50000;G.totalProduced=50000;G.clippers=50;G.wireCutters=20;G.machines=10;updateAll();}},
+{name:'ULTRA START',fn:()=>{G.cash=1e10;G.wire=1e12;G.paperclips=1e10;G.inventory=1e10;G.totalProduced=1e10;G.clippers=10000;G.wireCutters=5000;G.machines=1000;G.megaFactories=100;G.quantumFabricators=50;G.dimensionalResonators=20;updateAll();}}
+],
+basic: [
+{name:'+1K Clips',fn:()=>{G.paperclips+=1e3;G.inventory+=1e3;G.totalProduced+=1e3;updateAll();}},
+{name:'+1M Clips',fn:()=>{G.paperclips+=1e6;G.inventory+=1e6;G.totalProduced+=1e6;updateAll();}},
+{name:'+1B Clips',fn:()=>{G.paperclips+=1e9;G.inventory+=1e9;G.totalProduced+=1e9;updateAll();}},
+{name:'+1T Clips',fn:()=>{G.paperclips+=1e12;G.inventory+=1e12;G.totalProduced+=1e12;updateAll();}},
+{name:'+$1K',fn:()=>{G.cash+=1e3;updateAll();}},
+{name:'+$1M',fn:()=>{G.cash+=1e6;updateAll();}},
+{name:'+$1B',fn:()=>{G.cash+=1e9;updateAll();}},
+{name:'+$1T',fn:()=>{G.cash+=1e12;updateAll();}},
+{name:'+1K Wire',fn:()=>{G.wire+=1e3;updateAll();}},
+{name:'+1M Wire',fn:()=>{G.wire+=1e6;updateAll();}},
+{name:'+1B Wire',fn:()=>{G.wire+=1e9;updateAll();}},
+{name:'+1M Unsold',fn:()=>{G.inventory+=1e6;G.paperclips+=1e6;G.totalProduced+=1e6;updateAll();}}
+],
+production: [
+{name:'+10 Clippers',fn:()=>{G.clippers+=10;updateAll();}},
+{name:'+100 Clippers',fn:()=>{G.clippers+=100;updateAll();}},
+{name:'+1K Clippers',fn:()=>{G.clippers+=1000;updateAll();}},
+{name:'+10 Machines',fn:()=>{G.machines+=10;updateAll();}},
+{name:'+100 Machines',fn:()=>{G.machines+=100;updateAll();}},
+{name:'+1 Mega',fn:()=>{G.megaFactories+=1;updateAll();}},
+{name:'+10 Mega',fn:()=>{G.megaFactories+=10;updateAll();}},
+{name:'+1 Quantum',fn:()=>{G.quantumFabricators+=1;updateAll();}},
+{name:'+10 Quantum',fn:()=>{G.quantumFabricators+=10;updateAll();}},
+{name:'+1 Cosmic',fn:()=>{G.cosmicWeavers+=1;updateAll();}},
+{name:'+1 Planck',fn:()=>{G.planckFabricators+=1;updateAll();}},
+{name:'+1 Universe',fn:()=>{G.universeFractories+=1;updateAll();}},
+{name:'+1 Reality',fn:()=>{G.realityPrinters+=1;updateAll();}},
+{name:'+1 Existence',fn:()=>{G.existenceEngines+=1;updateAll();}},
+{name:'2x Production',fn:()=>{G.globalMult=(G.globalMult||1)*2;updateAll();}},
+{name:'10x Production',fn:()=>{G.globalMult=(G.globalMult||1)*10;updateAll();}}
+],
+economy: [
+{name:'+10 Marketing',fn:()=>{G.marketingLevel+=10;updateAll();}},
+{name:'+10 Distribution',fn:()=>{G.distribution+=10;updateAll();}},
+{name:'2x Price',fn:()=>{G.clipPrice=Math.min(100,G.clipPrice*2);document.getElementById('priceSlider').value=G.clipPrice;updateAll();}},
+{name:'10x Price',fn:()=>{G.clipPrice=Math.min(100,G.clipPrice*10);document.getElementById('priceSlider').value=G.clipPrice;updateAll();}},
+{name:'Set $0.50',fn:()=>{G.clipPrice=0.5;document.getElementById('priceSlider').value=0.5;updateAll();}},
+{name:'Set $1.00',fn:()=>{G.clipPrice=1;document.getElementById('priceSlider').value=1;updateAll();}},
+{name:'Lower Price',fn:()=>{G.clipPrice=Math.max(0.01,G.clipPrice/2);document.getElementById('priceSlider').value=G.clipPrice;updateAll();}},
+{name:'+100% Demand',fn:()=>{G.marketingLevel+=20;updateAll();}},
+{name:'+100% Sales',fn:()=>{G.distribution+=20;updateAll();}}
+],
+research: [
+{name:'+10 R&D',fn:()=>{G.rdPoints+=10;updateAll();}},
+{name:'+100 R&D',fn:()=>{G.rdPoints+=100;updateAll();}},
+{name:'+1K R&D',fn:()=>{G.rdPoints+=1000;updateAll();}},
+{name:'+10K R&D',fn:()=>{G.rdPoints+=10000;updateAll();}},
+{name:'+100K R&D',fn:()=>{G.rdPoints+=100000;updateAll();}},
+{name:'+10 RP',fn:()=>{G.requiemPoints+=10;updateAll();}},
+{name:'+100 RP',fn:()=>{G.requiemPoints+=100;updateAll();}},
+{name:'+1K RP',fn:()=>{G.requiemPoints+=1000;updateAll();}},
+{name:'Unlock All R&D',fn:()=>{RESEARCH.forEach(r=>{if(!G.researchCompleted.includes(r.id)){G.researchCompleted.push(r.id);if(r.eff)r.eff();}});updateAll();}},
+{name:'2x R&D Speed',fn:()=>{G.rdBonus=(G.rdBonus||1)*2;updateAll();}}
+],
+mega: [
+{name:'+1 Planck',fn:()=>{G.planckFabricators+=1;updateAll();}},
+{name:'+1 Universe',fn:()=>{G.universeFractories+=1;updateAll();}},
+{name:'+1 Reality',fn:()=>{G.realityPrinters+=1;updateAll();}},
+{name:'+1 Existence',fn:()=>{G.existenceEngines+=1;updateAll();}},
+{name:'+1 Void',fn:()=>{G.voidHarvesters+=1;updateAll();}},
+{name:'+1 Time',fn:()=>{G.timeDilators+=1;updateAll();}},
+{name:'+1 Entropy',fn:()=>{G.entropyReversers+=1;updateAll();}},
+{name:'1M x Prod',fn:()=>{G.globalMult=(G.globalMult||1)*1e6;updateAll();}}
+],
+god: [
+{name:'INF Clips',fn:()=>{G.paperclips=Infinity;G.inventory=Infinity;updateAll();}},
+{name:'INF Cash',fn:()=>{G.cash=Infinity;updateAll();}},
+{name:'INF Wire',fn:()=>{G.wire=Infinity;updateAll();}},
+{name:'INF R&D',fn:()=>{G.rdPoints=Infinity;updateAll();}},
+{name:'INF RP',fn:()=>{G.requiemPoints=Infinity;updateAll();}},
+{name:'1e15 ALL',fn:()=>{Object.keys(G).forEach(k=>{if(typeof G[k]==='number')G[k]=1e15;});G.cash=1e30;updateAll();}},
+{name:'1e50 ALL',fn:()=>{Object.keys(G).forEach(k=>{if(typeof G[k]==='number')G[k]=1e50;});G.cash=1e60;updateAll();}},
+{name:'COMPLETE',fn:()=>{Object.keys(G).forEach(k=>{if(typeof G[k]==='number')G[k]=1e30;});RESEARCH.forEach(r=>{if(!G.researchCompleted.includes(r.id)){G.researchCompleted.push(r.id);if(r.eff)r.eff();}});SKILLS.forEach(s=>{if(!G.skillsUnlocked.includes(s.id)){G.skillsUnlocked.push(s.id);if(s.eff)s.eff();}});updateAll();}}
+],
+fun: [
+{name:'Explosion!',fn:()=>{for(let i=0;i<50;i++){setTimeout(()=>{G.paperclips+=1e5;G.inventory+=1e5;G.totalProduced+=1e5;updateAll();},i*20);}}},
+{name:'Money Rain',fn:()=>{G.cash+=1e10;updateAll();}},
+{name:'Wire Storm',fn:()=>{G.wire+=1e8;updateAll();}},
+{name:'Hyperinflation',fn:()=>{G.clipPrice=1e6;document.getElementById('priceSlider').value=1e6;updateAll();}},
+{name:'Deflation',fn:()=>{G.clipPrice=0.001;document.getElementById('priceSlider').value=0.001;updateAll();}},
+{name:'2x Everything',fn:()=>{Object.keys(G).forEach(k=>{if(typeof G[k]==='number'&&G[k]>0)G[k]*=2;});updateAll();}},
+{name:'Half Everything',fn:()=>{['paperclips','wire','cash','inventory','clippers','wireCutters','machines'].forEach(k=>{G[k]=Math.floor(G[k]/2);});updateAll();}},
+{name:'Zero Out',fn:()=>{['paperclips','wire','cash','inventory'].forEach(k=>{G[k]=0;});updateAll();}}
+],
+chaos: [
+{name:'BIG BANG',fn:()=>{Object.keys(G).forEach(k=>{if(typeof G[k]==='number')G[k]=1e50;});updateAll();}},
+{name:'Quantum Glitch',fn:()=>{G.wire=Math.random()*1e12;G.paperclips=Math.random()*1e12;G.cash=Math.random()*1e12;updateAll();}},
+{name:'Black Hole',fn:()=>{G.paperclips*=0.01;G.cash*=0.01;G.globalMult=(G.globalMult||1)*1000;updateAll();}},
+{name:'Meteor',fn:()=>{G.cash*=0.1;G.globalMult=(G.globalMult||1)*50;updateAll();}},
+{name:'Supernova',fn:()=>{G.globalMult=(G.globalMult||1)*1e12;G.cash*=1e6;updateAll();}},
+{name:'Alien Tech',fn:()=>{G.globalMult=(G.globalMult||1)*1000;updateAll();}}
+]
+};
+
+function formatNum(n) {
+if(n===Infinity)return'∞';
+if(n==null||isNaN(n))return'0';
+let abs=Math.abs(n);
+if(abs<1000)return n<1?n.toFixed(2):Math.floor(n).toString();
+let suf=['','K','M','B','T','Qa','Qi','Sx','Sp','Oc','No','Dc'];
+let t=Math.min(Math.floor(Math.log10(abs)/3),suf.length-1);
+return(n/Math.pow(1000,t)).toFixed(1)+suf[t];
+}
+
+function notify(msg) {
+if(!S.notifications)return;
+let el=document.getElementById('notification');
+el.textContent=msg;
+el.classList.remove('hidden');
+clearTimeout(el.timeout);
+el.timeout=setTimeout(()=>el.classList.add('hidden'),2500);
+}
+
+function loadCheats() {
+let cat=document.getElementById('cheatCategory').value;
+let data=CHEATS[cat]||[];
+let html='<div class="cheat-grid">';
+data.forEach((c,i)=>{
+html+=`<button class="btn small-btn" id="cheatBtn${i}">${c.name}</button>`;
+});
+html+='</div>';
+document.getElementById('cheatContent').innerHTML=html;
+data.forEach((c,i)=>{
+document.getElementById('cheatBtn'+i).onclick=()=>{c.fn();notify('Done!');};
+});
+}
+document.getElementById('cheatCategory').onchange=loadCheats;
+
+function makePaperclip() {
+if(G.wire>=1||T.freePurchases){
+if(!T.freePurchases)G.wire-=1;
+let amt=1*getProdMult();
+G.paperclips+=amt;
+G.inventory+=amt;
+G.totalProduced+=amt;
+}
+}
+
+function buyWire(amt) {
+let cost=0.01*amt*(G.wireDiscount||1)*S.wireCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.wire+=amt;
+}
+}
+
+function buyClippers() {
+let cost=G.clipperCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.clippers++;
+G.clipperCost=Math.ceil(G.clipperCost*1.15*100)/100;
+}
+}
+
+function buyWireCutters() {
+let cost=G.wireCutterCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.wireCutters++;
+G.wireCutterCost=Math.ceil(G.wireCutterCost*1.15*100)/100;
+}
+}
+
+function buyMachines() {
+let cost=G.machineCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.machines++;
+G.machineCost=Math.ceil(G.machineCost*1.15*100)/100;
+}
+}
+
+function buyMegaFactories() {
+let cost=G.megaFactoryCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.megaFactories++;
+G.megaFactoryCost=Math.ceil(G.megaFactoryCost*1.15*100)/100;
+}
+}
+
+function buyQuantumFabricators() {
+let cost=G.quantumCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.quantumFabricators++;
+G.quantumCost=Math.ceil(G.quantumCost*1.2*100)/100;
+}
+}
+
+function buyDimensionalResonators() {
+let cost=G.dimensionalCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.dimensionalResonators++;
+G.dimensionalCost=Math.ceil(G.dimensionalCost*1.25*100)/100;
+}
+}
+
+function buyCosmicWeavers() {
+let cost=G.cosmicCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.cosmicWeavers++;
+G.cosmicCost=Math.ceil(G.cosmicCost*1.3*100)/100;
+}
+}
+
+function buyPlanckFabricators() {
+let cost=G.planckCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.planckFabricators++;
+G.planckCost=Math.ceil(G.planckCost*1.35*100)/100;
+}
+}
+
+function buyUniverseFractories() {
+let cost=G.universeCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.universeFractories++;
+G.universeCost=Math.ceil(G.universeCost*1.4*100)/100;
+}
+}
+
+function buyRealityPrinters() {
+let cost=G.realityCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.realityPrinters++;
+G.realityCost=Math.ceil(G.realityCost*1.45*100)/100;
+}
+}
+
+function buyExistenceEngines() {
+let cost=G.existenceCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.existenceEngines++;
+G.existenceCost=Math.ceil(G.existenceCost*1.5*100)/100;
+}
+}
+
+function buyVoidHarvesters() {
+let cost=G.voidCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.voidHarvesters++;
+G.voidCost=Math.ceil(G.voidCost*1.55*100)/100;
+}
+}
+
+function buyTimeDilators() {
+let cost=G.timeCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.timeDilators++;
+G.timeCost=Math.ceil(G.timeCost*1.6*100)/100;
+}
+}
+
+function buyEntropyReversers() {
+let cost=G.entropyCost*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.entropyReversers++;
+G.entropyCost=Math.ceil(G.entropyCost*1.65*100)/100;
+}
+}
+
+function buyMarketing() {
+let cost=(50*Math.pow(1.5,G.marketingLevel))*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.marketingLevel++;
+}
+}
+
+function buyDistribution() {
+let cost=(500*Math.pow(1.5,G.distribution))*(G.upgradeDiscount||1)*S.upgradeCostMult;
+if(G.cash>=cost||T.freePurchases){
+if(!T.freePurchases)G.cash-=cost;
+G.distribution++;
+}
+}
+
+function setPrice(price) {
+G.clipPrice=parseFloat(price);
+}
+
+function getProdMult() {
+let mult=G.globalMult||1;
+mult*=(G.clipperEff||1)*(G.clipperBonus||1)*(G.globalBonus||1)*(G.ultimateBonus||1)*(G.godBonus||1);
+mult*=(G.machineEff||1);
+mult*=(G.megaEff||1)*(G.megaBonus||1);
+mult*=(G.quantumEff||1)*(G.quantumBonus||1);
+mult*=(G.dimensionalEff||1)*(G.dimensionalBonus||1);
+mult*=(G.cosmicEff||1)*(G.cosmicBonus||1);
+mult*=(G.planckEff||1)*(G.planckBonus||1);
+mult*=(G.universeEff||1)*(G.universeBonus||1);
+mult*=(G.realityEff||1)*(G.realityBonus||1);
+mult*=(G.existenceEff||1)*(G.existenceBonus||1);
+mult*=(G.voidEff||1)*(G.voidBonus||1);
+mult*=(G.timeEff||1)*(G.timeBonus||1);
+mult*=(G.entropyEff||1)*(G.entropyBonus||1);
+mult*=S.prodMult;
+return mult;
+}
+
+function getWireMult() {
+return (G.wireBonus||1)*(G.globalBonus||1)*(G.ultimateBonus||1)*(G.godBonus||1);
+}
+
+function calcDemand() {
+let base=100;
+let priceEff=Math.pow(0.5/G.clipPrice,0.5);
+let mktBoost=1+(G.marketingLevel*0.1*(G.marketingBonus||1));
+let distBoost=1+(G.distribution*0.05);
+let demand=base*priceEff*mktBoost*distBoost*S.demandMult;
+if(G.demandFloor&&demand<100)demand=100;
+return Math.max(0,demand);
+}
+
+function calcSalesRate(demand) {
+let salesBonus=(G.salesBonus||1);
+let distBonus=1+(G.distribution*0.05);
+return demand*0.1*distBonus*salesBonus;
+}
+
+function calcPPS() {
+let clipperP=(G.clippers*0.1*(G.clipperEff||1)*(G.clipperBonus||1));
+let machineP=(G.machines*(G.machineEff||1));
+let megaP=(G.megaFactories*10*(G.megaEff||1)*(G.megaBonus||1));
+let quantumP=(G.quantumFabricators*100*(G.quantumEff||1)*(G.quantumBonus||1));
+let dimensionalP=(G.dimensionalResonators*1000*(G.dimensionalEff||1)*(G.dimensionalBonus||1));
+let cosmicP=(G.cosmicWeavers*10000*(G.cosmicEff||1)*(G.cosmicBonus||1));
+let planckP=(G.planckFabricators*100000*(G.planckEff||1)*(G.planckBonus||1));
+let universeP=(G.universeFractories*1e6*(G.universeEff||1)*(G.universeBonus||1));
+let realityP=(G.realityPrinters*1e8*(G.realityEff||1)*(G.realityBonus||1));
+let existenceP=(G.existenceEngines*1e10*(G.existenceEff||1)*(G.existenceBonus||1));
+let voidP=(G.voidHarvesters*1e12*(G.voidEff||1)*(G.voidBonus||1));
+let timeP=(G.timeDilators*1e15*(G.timeEff||1)*(G.timeBonus||1));
+let entropyP=(G.entropyReversers*1e18*(G.entropyEff||1)*(G.entropyBonus||1));
+return (clipperP+machineP+megaP+quantumP+dimensionalP+cosmicP+planckP+universeP+realityP+existenceP+voidP+timeP+entropyP)*getProdMult();
+}
+
+function doResearch(id) {
+let r=RESEARCH.find(x=>x.id===id);
+if(r&&!G.researchCompleted.includes(id)){
+if(G.rdPoints>=r.cost||T.freePurchases){
+if(!T.freePurchases)G.rdPoints-=r.cost;
+G.researchCompleted.push(id);
+if(r.eff)r.eff();
+notify('Researched: '+r.name);
+}
+}
+}
+
+function buySkill(id) {
+let s=SKILLS.find(x=>x.id===id);
+if(s&&!G.skillsUnlocked.includes(id)){
+if(G.requiemPoints>=s.cost||T.freePurchases){
+if(!T.freePurchases)G.requiemPoints-=s.cost;
+G.skillsUnlocked.push(id);
+if(s.eff)s.eff();
+notify('Skill unlocked: '+s.name);
+}
+}
+}
+
+function claimMilestone() {
+let m=MILESTONES[G.milestoneIndex];
+if(m&&G.totalProduced>=m.threshold){
+G.milestoneIndex++;
+let rType=m.rewardType||'rp';
+let rVal=m.reward||Math.ceil(m.threshold/1000);
+let msg='Milestone: '+m.name+'!';
+switch(rType){
+case 'rp':
+G.requiemPoints+=rVal;
+msg+=' +'+formatNum(rVal)+' RP';
+break;
+case 'cash':
+G.cash+=rVal;
+msg+=' +$'+formatNum(rVal);
+break;
+case 'wire':
+G.wire+=rVal;
+msg+=' +'+formatNum(rVal)+' Wire';
+break;
+case 'clipperBoost':
+G.clipperBonus=(G.clipperBonus||1)*rVal;
+msg+=' Clippers '+Math.round((rVal-1)*100)+'%';
+break;
+case 'wireBoost':
+G.wireBonus=(G.wireBonus||1)*rVal;
+msg+=' Wire '+Math.round((rVal-1)*100)+'%';
+break;
+case 'globalBoost':
+G.globalBonus=(G.globalBonus||1)*(1+rVal);
+msg+=' Global +'+(rVal*100).toFixed(0)+'%';
+break;
+case 'demandBoost':
+G.marketingLevel+=rVal;
+msg+=' Marketing +'+Math.round(rVal)+'%';
+break;
+case 'salesBoost':
+G.distribution+=rVal;
+msg+=' Distribution +'+Math.round(rVal)+'%';
+break;
+case 'rdBoost':
+G.rdBonus=(G.rdBonus||1)*(1+rVal);
+msg+=' R&D +'+(rVal*100).toFixed(0)+'%';
+break;
+default:
+G.requiemPoints+=rVal;
+msg+=' +'+formatNum(rVal)+' RP';
+}
+notify(msg);
+}
+}
+
+function getRPRate() {
+let rate=0.01;
+if(G.rpFlow)rate+=0.5;
+if(G.rpPerClips)rate+=G.totalProduced/2e6;
+if(G.rpPerCash)rate+=G.totalEarned/2e6;
+return rate;
+}
+
+function getRDSpeed() {
+return (1+G.totalProduced/1e6)*(G.rdBonus||1)*S.rdMult;
+}
+
+function updateAll() {
+document.getElementById('paperclips').textContent=formatNum(G.paperclips);
+document.getElementById('wire').textContent=formatNum(G.wire);
+document.getElementById('inventory').textContent=formatNum(G.inventory);
+document.getElementById('cash').textContent=formatNum(G.cash);
+document.getElementById('totalProduced').textContent=formatNum(G.totalProduced);
+document.getElementById('totalSold').textContent=formatNum(G.totalSold);
+document.getElementById('totalEarned').textContent=formatNum(G.totalEarned);
+document.getElementById('timePlayed').textContent=formatTime(G.timePlayed);
+document.getElementById('pps').textContent=formatNum(calcPPS());
+document.getElementById('wps').textContent=formatNum(G.wireCutters*0.5*getWireMult());
+document.getElementById('clipPrice').textContent=formatNum(G.clipPrice*S.saleMult);
+document.getElementById('priceSlider').value=G.clipPrice;
+
+let demand=calcDemand();
+document.getElementById('demand').textContent=Math.floor(demand);
+document.getElementById('demandBar').style.width=Math.min(100,demand)+'%';
+document.getElementById('salesRate').textContent=formatNum(calcSalesRate(demand));
+
+document.getElementById('clippers').textContent=G.clippers;
+document.getElementById('clipperCost').textContent=formatNum(G.clipperCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('wireCutters').textContent=G.wireCutters;
+document.getElementById('wireCutterCost').textContent=formatNum(G.wireCutterCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('machines').textContent=G.machines;
+document.getElementById('machineCost').textContent=formatNum(G.machineCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('megaFactories').textContent=G.megaFactories;
+document.getElementById('megaFactoryCost').textContent=formatNum(G.megaFactoryCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('quantumFabricators').textContent=G.quantumFabricators;
+document.getElementById('quantumCost').textContent=formatNum(G.quantumCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('dimensionalResonators').textContent=G.dimensionalResonators;
+document.getElementById('dimensionalCost').textContent=formatNum(G.dimensionalCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('cosmicWeavers').textContent=G.cosmicWeavers;
+document.getElementById('cosmicCost').textContent=formatNum(G.cosmicCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('planckFabricators').textContent=G.planckFabricators;
+document.getElementById('planckCost').textContent=formatNum(G.planckCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('universeFractories').textContent=G.universeFractories;
+document.getElementById('universeCost').textContent=formatNum(G.universeCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('realityPrinters').textContent=G.realityPrinters;
+document.getElementById('realityCost').textContent=formatNum(G.realityCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('existenceEngines').textContent=G.existenceEngines;
+document.getElementById('existenceCost').textContent=formatNum(G.existenceCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('voidHarvesters').textContent=G.voidHarvesters;
+document.getElementById('voidCost').textContent=formatNum(G.voidCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('timeDilators').textContent=G.timeDilators;
+document.getElementById('timeCost').textContent=formatNum(G.timeCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('entropyReversers').textContent=G.entropyReversers;
+document.getElementById('entropyCost').textContent=formatNum(G.entropyCost*(G.upgradeDiscount||1)*S.upgradeCostMult);
+
+document.getElementById('marketingLevel').textContent=G.marketingLevel;
+document.getElementById('demandBoost').textContent=Math.floor(G.marketingLevel*10*(G.marketingBonus||1));
+document.getElementById('marketingCost').textContent=formatNum((50*Math.pow(1.5,G.marketingLevel))*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('distribution').textContent=G.distribution;
+document.getElementById('salesBoost').textContent=Math.floor(G.distribution*5);
+document.getElementById('distributionCost').textContent=formatNum((500*Math.pow(1.5,G.distribution))*(G.upgradeDiscount||1)*S.upgradeCostMult);
+document.getElementById('wirePrice').textContent=formatNum(0.01*(G.wireDiscount||1)*S.wireCostMult);
+
+document.getElementById('rdPoints').textContent=formatNum(G.rdPoints);
+document.getElementById('rdSpeed').textContent=formatNum(getRDSpeed());
+document.getElementById('requiemPoints').textContent=formatNum(G.requiemPoints);
+document.getElementById('rpRate').textContent=formatNum(getRPRate());
+
+if(!G._lastResearch||JSON.stringify(G._lastResearch)!==JSON.stringify(G.researchCompleted)){
+G._lastResearch=[...G.researchCompleted];
+let rList=document.getElementById('researchList');
+let cList=document.getElementById('completedResearch');
+rList.innerHTML='<h3>Available Research</h3>';
+cList.innerHTML='<h3>Completed</h3>';
+RESEARCH.forEach(r=>{
+if(G.researchCompleted.includes(r.id)){
+let div=document.createElement('div');
+div.className='research-item completed';
+div.innerHTML=`<div class="research-name">✓ ${r.name}</div><div class="research-desc">${r.desc}</div>`;
+cList.appendChild(div);
+}else{
+let btn=document.createElement('button');
+btn.className='btn research';
+btn.style.cssText='display:block;width:100%;margin:4px 0;';
+btn.innerHTML=`<div class="research-name">${r.name}</div><div class="research-desc">${r.desc}</div><div class="research-cost">Cost: ${formatNum(r.cost)} R&D</div>`;
+btn.onclick=()=>doResearch(r.id);
+rList.appendChild(btn);
+}
+});
+}
+
+if(!G._lastSkills||JSON.stringify(G._lastSkills)!==JSON.stringify(G.skillsUnlocked)){
+G._lastSkills=[...G.skillsUnlocked];
+let sList=document.getElementById('skillList');
+sList.innerHTML='';
+SKILLS.forEach(s=>{
+let unlocked=G.skillsUnlocked.includes(s.id);
+let div=document.createElement('div');
+div.className='skill-node'+(unlocked?' unlocked':'');
+div.innerHTML=`<div class="skill-name">${s.name}${unlocked?' ✓':''}</div><div class="skill-desc">${s.desc}</div><div class="skill-cost">Cost: ${formatNum(s.cost)} RP${unlocked?' (Unlocked)':''}</div>`;
+if(!unlocked)div.onclick=()=>buySkill(s.id);
+sList.appendChild(div);
+});
+}
+
+if(G._lastMilestone!==G.milestoneIndex){
+G._lastMilestone=G.milestoneIndex;
+let mList=document.getElementById('milestoneList');
+mList.innerHTML='';
+let start=G.milestoneIndex;
+let end=Math.min(MILESTONES.length,G.milestoneIndex+10);
+for(let i=start;i<end;i++){
+let m=MILESTONES[i];
+let claimed=i<G.milestoneIndex;
+let available=i===G.milestoneIndex&&G.totalProduced>=m.threshold;
+let div=document.createElement('div');
+div.className='milestone-claim'+(claimed?' claimed':'');
+let rewardTxt='';
+if(!claimed){
+let rType=m.rewardType||'rp';
+let rVal=m.reward||Math.ceil(m.threshold/1000);
+switch(rType){
+case 'rp': rewardTxt=formatNum(rVal)+' RP'; break;
+case 'cash': rewardTxt='$'+formatNum(rVal); break;
+case 'wire': rewardTxt=formatNum(rVal)+' Wire'; break;
+case 'clipperBoost': rewardTxt='Clippers +'+Math.round((rVal-1)*100)+'%'; break;
+case 'wireBoost': rewardTxt='Wire +'+Math.round((rVal-1)*100)+'%'; break;
+case 'globalBoost': rewardTxt='Global +'+(rVal*100).toFixed(0)+'%'; break;
+case 'demandBoost': rewardTxt='Marketing +'+Math.round(rVal)+'%'; break;
+case 'salesBoost': rewardTxt='Distribution +'+Math.round(rVal)+'%'; break;
+case 'rdBoost': rewardTxt='R&D +'+(rVal*100).toFixed(0)+'%'; break;
+default: rewardTxt=formatNum(rVal)+' RP';
+}
+}
+div.innerHTML=`<div class="m-name">${claimed?'✓ ':available?'★ ':''}${m.name}</div><div class="m-reward">${m.desc}${claimed?'':' - Reward: '+rewardTxt}</div>`;
+if(available)div.onclick=claimMilestone;
+mList.appendChild(div);
+}
+
+let aList=document.getElementById('achievedMilestoneList');
+aList.innerHTML='';
+for(let i=0;i<G.milestoneIndex;i++){
+let m=MILESTONES[i];
+let div=document.createElement('div');
+div.className='milestone-claim claimed';
+let rType=m.rewardType||'rp';
+let rVal=m.reward||Math.ceil(m.threshold/1000);
+let rewardTxt='';
+switch(rType){
+case 'rp': rewardTxt=formatNum(rVal)+' RP'; break;
+case 'cash': rewardTxt='$'+formatNum(rVal); break;
+case 'wire': rewardTxt=formatNum(rVal)+' Wire'; break;
+case 'clipperBoost': rewardTxt='Clippers +'+Math.round((rVal-1)*100)+'%'; break;
+case 'wireBoost': rewardTxt='Wire +'+Math.round((rVal-1)*100)+'%'; break;
+case 'globalBoost': rewardTxt='Global +'+(rVal*100).toFixed(0)+'%'; break;
+case 'demandBoost': rewardTxt='Marketing +'+Math.round(rVal)+'%'; break;
+case 'salesBoost': rewardTxt='Distribution +'+Math.round(rVal)+'%'; break;
+case 'rdBoost': rewardTxt='R&D +'+(rVal*100).toFixed(0)+'%'; break;
+default: rewardTxt=formatNum(rVal)+' RP';
+}
+div.innerHTML=`<div class="m-name">✓ ${m.name}</div><div class="m-reward">${m.desc} - Reward: ${rewardTxt}</div>`;
+aList.appendChild(div);
+}
+if(G.milestoneIndex===0)aList.innerHTML='<div style="color:var(--text-muted);font-size:12px;padding:10px;">No milestones achieved yet</div>';
+}
+
+document.getElementById('debugPaperclips').textContent=formatNum(G.paperclips);
+document.getElementById('debugWire').textContent=formatNum(G.wire);
+document.getElementById('debugCash').textContent='$'+formatNum(G.cash);
+document.getElementById('debugInventory').textContent=formatNum(G.inventory);
+document.getElementById('debugRD').textContent=formatNum(G.rdPoints);
+document.getElementById('debugRP').textContent=formatNum(G.requiemPoints);
+document.getElementById('debugMilestone').textContent=G.milestoneIndex+'/'+MILESTONES.length;
+document.getElementById('debugRDCount').textContent=G.researchCompleted.length+'/'+RESEARCH.length;
+document.getElementById('debugSkillCount').textContent=G.skillsUnlocked.length+'/'+SKILLS.length;
+document.getElementById('debugDemand').textContent=Math.floor(calcDemand());
+document.getElementById('debugPPS').textContent=formatNum(calcPPS());
+document.getElementById('debugRPRate').textContent=formatNum(getRPRate());
+}
+
+function formatTime(s) {
+let h=Math.floor(s/3600),m=Math.floor((s%3600)/60),sec=Math.floor(s%60);
+return `${h}:${m.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+}
+
+function setTheme(theme) {
+document.documentElement.setAttribute('data-theme',theme);
+S.theme=theme;
+document.getElementById('themeSelect').value=theme;
+saveSettings();
+}
+
+function toggleSection(id) {
+let el=document.getElementById(id);
+el.style.display=el.style.display==='none'?'block':'none';
+}
+
+function updateSetting(key,val) {
+S[key]=parseFloat(val);
+let el=document.getElementById(key+'Val');
+if(el)el.textContent=val+'x';
+saveSettings();
+}
+
+function saveSettings() {localStorage.setItem('pclips2set',JSON.stringify(S));}
+function loadSettings() {
+let s=localStorage.getItem('pclips2set');
+if(s){try{S={...DEF_SETTINGS,...JSON.parse(s)};}catch(e){S={...DEF_SETTINGS};}}
+document.getElementById('themeSelect').value=S.theme;
+document.getElementById('gameSpeed').value=S.gameSpeed;
+document.getElementById('prodMult').value=S.prodMult;
+document.getElementById('saleMult').value=S.saleMult;
+document.getElementById('rdMult').value=S.rdMult;
+document.getElementById('demandMult').value=S.demandMult;
+document.getElementById('wireCostMult').value=S.wireCostMult;
+document.getElementById('upgradeCostMult').value=S.upgradeCostMult;
+document.getElementById('autoSave').checked=S.autoSave;
+document.getElementById('notifications').checked=S.notifications;
+document.getElementById('autoClaimMilestones').checked=S.autoClaimMilestones;
+document.getElementById('showDebug').checked=S.showDebug;
+if(S.showDebug)document.getElementById('debugPanel').style.display='block';
+['gameSpeed','prodMult','saleMult','rdMult','demandMult','wireCostMult','upgradeCostMult'].forEach(k=>updateSetting(k,S[k]));
+setTheme(S.theme);
+}
+
+function saveGame() {
+localStorage.setItem('pclips2game',JSON.stringify(G));
+localStorage.setItem('pclips2tog',JSON.stringify(T));
+notify('Saved!');
+}
+function exportSave() {navigator.clipboard.writeText(btoa(JSON.stringify({G,T})));notify('Copied!');}
+function importSave() {
+let s=prompt('Paste save:');
+if(s){try{let d=JSON.parse(atob(s));G={...DEF_GAME,...d.G};T={...DEF_TOGGLES,...d.T};notify('Imported!');updateAll();}catch(e){notify('Invalid!');}}
+}
+
+function saveToggles() {
+Object.keys(DEF_TOGGLES).forEach(k=>{T[k]=document.getElementById(k).checked;});
+localStorage.setItem('pclips2tog',JSON.stringify(T));
+}
+function loadToggles() {
+let t=localStorage.getItem('pclips2tog');
+if(t){try{T={...DEF_TOGGLES,...JSON.parse(t)};}catch(e){T={...DEF_TOGGLES};}}
+Object.keys(DEF_TOGGLES).forEach(k=>{let el=document.getElementById(k);if(el)el.checked=T[k];});
+}
+
+function loadGame() {
+let g=localStorage.getItem('pclips2game');
+G={...DEF_GAME};
+if(g){try{let p=JSON.parse(g);Object.keys(DEF_GAME).forEach(k=>{if(p[k]!==undefined)G[k]=p[k];});}catch(e){}}
+RESEARCH.forEach(r=>{if(G.researchCompleted.includes(r.id)&&r.eff)r.eff();});
+SKILLS.forEach(s=>{if(G.skillsUnlocked.includes(s.id)&&s.eff)s.eff();});
+}
+
+function gameLoop() {
+let now=Date.now();
+let dt=(now-G.lastUpdate)/1000;
+let spd=S.gameSpeed;
+G.lastUpdate=now;
+G.timePlayed+=dt;
+
+let wireP=G.wireCutters*0.5*getWireMult()*spd*dt;
+G.wire+=wireP;
+
+let wireUse=(
+G.clippers*0.1*(G.clipperEff||1)*(G.clipperBonus||1)+
+G.machines*(G.machineEff||1)+
+G.megaFactories*10*(G.megaEff||1)*(G.megaBonus||1)+
+G.quantumFabricators*100*(G.quantumEff||1)*(G.quantumBonus||1)+
+G.dimensionalResonators*1000*(G.dimensionalEff||1)*(G.dimensionalBonus||1)+
+G.cosmicWeavers*10000*(G.cosmicEff||1)*(G.cosmicBonus||1)+
+G.planckFabricators*100000*(G.planckEff||1)*(G.planckBonus||1)+
+G.universeFractories*1e6*(G.universeEff||1)*(G.universeBonus||1)+
+G.realityPrinters*1e8*(G.realityEff||1)*(G.realityBonus||1)+
+G.existenceEngines*1e10*(G.existenceEff||1)*(G.existenceBonus||1)+
+G.voidHarvesters*1e12*(G.voidEff||1)*(G.voidBonus||1)+
+G.timeDilators*1e15*(G.timeEff||1)*(G.timeBonus||1)+
+G.entropyReversers*1e18*(G.entropyEff||1)*(G.entropyBonus||1)
+)*spd*dt*getProdMult();
+
+let used=Math.min(wireUse,G.wire);
+G.wire-=used;
+let clips=used;
+G.paperclips+=clips;
+G.inventory+=clips;
+G.totalProduced+=clips;
+
+if(T.autoBuyWire&&G.cash>0.01)buyWire(10);
+
+let demand=calcDemand();
+let salesRate=calcSalesRate(demand);
+let sold=Math.min(G.inventory,salesRate*dt);
+if(T.autoSell)sold=Math.min(G.inventory,100*dt);
+if(sold>0){
+let rev=sold*G.clipPrice*S.saleMult;
+G.cash+=rev;
+G.inventory-=sold;
+G.totalSold+=sold;
+G.totalEarned+=rev;
+}
+
+G.rdPoints+=getRDSpeed()*dt;
+G.requiemPoints+=getRPRate()*dt;
+
+if(T.autoMakeClippers&&G.cash>G.clipperCost)buyClippers();
+if(T.autoBuyMachines&&G.cash>G.machineCost)buyMachines();
+if(T.autoMarketing&&G.cash>50)buyMarketing();
+if(T.autoDistribution&&G.cash>500)buyDistribution();
+if(T.autoResearch){let r=RESEARCH.find(r=>!G.researchCompleted.includes(r.id));if(r&&G.rdPoints>=r.cost)doResearch(r.id);}
+if(T.autoMegaFactories&&G.cash>G.megaFactoryCost)buyMegaFactories();
+if(T.autoQuantum&&G.cash>G.quantumCost)buyQuantumFabricators();
+if(T.autoDimensional&&G.cash>G.dimensionalCost)buyDimensionalResonators();
+if(T.autoCosmic&&G.cash>G.cosmicCost)buyCosmicWeavers();
+if(T.autoRequiem){
+SKILLS.forEach(s=>{
+if(!G.skillsUnlocked.includes(s.id)&&G.requiemPoints>=s.cost){
+buySkill(s.id);
+}
+});
+}
+if(S.autoClaimMilestones){
+while(G.milestoneIndex<MILESTONES.length&&G.totalProduced>=MILESTONES[G.milestoneIndex].threshold){
+let m=MILESTONES[G.milestoneIndex];
+G.milestoneIndex++;
+let rType=m.rewardType||'rp';
+let rVal=m.reward||Math.ceil(m.threshold/1000);
+switch(rType){
+case 'rp': G.requiemPoints+=rVal; break;
+case 'cash': G.cash+=rVal; break;
+case 'wire': G.wire+=rVal; break;
+case 'clipperBoost': G.clipperBonus=(G.clipperBonus||1)*rVal; break;
+case 'wireBoost': G.wireBonus=(G.wireBonus||1)*rVal; break;
+case 'globalBoost': G.globalBonus=(G.globalBonus||1)*(1+rVal); break;
+case 'demandBoost': G.marketingLevel+=rVal; break;
+case 'salesBoost': G.distribution+=rVal; break;
+case 'rdBoost': G.rdBonus=(G.rdBonus||1)*(1+rVal); break;
+default: G.requiemPoints+=rVal;
+}
+}
+}
+
+updateAll();
+if(S.autoSave&&Math.floor(G.timePlayed)%30===0)saveGame();
+}
+
+G={...DEF_GAME};
+T={...DEF_TOGGLES};
+S={...DEF_SETTINGS};
+loadGame();
+loadToggles();
+loadSettings();
+loadCheats();
+updateAll();
+setInterval(gameLoop,50);
+if(S.autoSave)setInterval(saveGame,30000);
+</script>
+
+
+</body></html>
